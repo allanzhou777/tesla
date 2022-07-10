@@ -1,0 +1,126 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  * {
+    box-sizing: border-box;
+    transition: 0.5s;
+  }
+  
+  #hero1 {
+    background-image: url("\images\tesla_model_3.jpg");
+  }
+  
+  .hidden {
+    opacity: 0;
+    font-size: 3em;
+    text-align: center;
+    animation-name: fadeout;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+  }
+  
+  .heroinner {
+    animation-name: fadein;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    font-size: 3em;
+    text-align: center;
+  }
+  
+  #hero2 {
+    background-image: url("\images\tesla_model_3_img2.jpg");
+  }
+  
+  .hero {
+    cursor: none;
+    width: 100vw;
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition-duration: 0s;
+    opacity: 1;
+  }
+  
+  @supports (background-attachment: fixed) {
+    .hero {
+      background-attachment: fixed;
+    }
+  }
+  
+  main {
+    margin: 0% 10% 0% 10%;
+    width: 80%;
+  }
+  
+  input {
+    background-color: papayawhip;
+    color: blue;
+    font-size: 1em;
+    margin: 5px 20px 20px 20px;
+    outline: none;
+    border-width: 0px;
+    padding: 5px 20px;
+    font-family: Futura, Nunito, Verdana, sans-serif;
+    border-radius: 20px;
+  }
+  
+  .text {
+    background-color: rgba(35, 181, 211, 0.5);
+    margin: 20px 0px;
+    padding: 20px;
+    border-radius: 20px
+  }
+  
+  .red {
+    color: red;
+  }
+  
+  .feedsubmiteffects:hover {
+    background-color: #6667ff;
+    color: #FFF7E9;
+  }
+  
+  .feedsubmiteffects:active {
+    transition: 0s;
+    color: rgba(255, 255, 255, 0);
+  }
+  
+  .nohoveractive:hover {
+    background-color: yellowgreen;
+    color: inherit;
+  }
+  
+  .nohoveractive:active {
+    background-color: yellowgreen;
+    color: inherit;
+  }
+  
+  .detail {
+    font-size: 0.9em;
+    color: #222;
+  }
+  
+  .dropdowns {
+    font-size: 1em;
+    font-family: Futura, Nunito, Verdana, sans-serif;
+    background-color: papayawhip;
+    color: blue;
+    border: none;
+    outline: none;
+  }
+  
+  #dropcontain {
+    margin: 0;
+  }
+  
+  #nobottommargin {
+    margin: 0;
+  }
+  
+  #scroll {
+    padding: 10px;
+  }

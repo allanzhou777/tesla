@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <title>Tesla</title>
+  <link rel="icon" href="\images\favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bodoni+Moda:opsz,wght@6..96,400;6..96,600;6..96,700;6..96,800;6..96,900&family=Chilanka&family=Comic+Neue&family=Limelight&family=Noto+Serif:wght@700&family=Unkempt&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Ishan Goel">
+  <script src="../base.js"></script>
+  <script src="script.js"></script>
+</head>
+
+<body onkeyup="submit()" onclick="submit()" onkeydown="submit()" onkeypress="submit()" onunload="end()" onload="animateHTML().init();">
+    <section class="hero" id="hero1">
+      <div class="hidden" id="hero1inner">
+        <br>
+        <br>
+        Switch To Electric!!
+      </div>
+    </section>
+  
+    <main id="main">
+      <h1>Find out how your 1800s technology gas car compares to a Model 3</h1>
+  
+      <button id="compare">Start Comparing</button>
+  
+  
+  
+      <h3>Standard Range Plus Model 3 taken: (37,990 USD).
+        <br><br>Shanghai Gigafactory has started production and prices may drop this year.
+        <br><br>Gigafactory 4 in Berlin, which will open in 2022.
+        <br><br>Gigafactory 5 in Austin, Texas, which will also open in 2022. 
+        <br><br>Price of fuel may increase due to recent attacks on the world's oil supply
+        <br><br>
+        <span class="red">Tesla <a href="https://www.cnbc.com/2019/07/08/elon-musk-self-driving-robotaxis-could-make-teslas-more-expensive.html">prices will go up</a> significantly as value as a RoboTaxi increases as soon as Full Self Driving is
+          achieved
+        </span>
+      </h3>
+      <p class="text" id="nobottommargin">
+        <a target="_blank" href="https://www.tesla.com/model3/design">Official Tesla Model 3 Design Website</a>
+      </p>
+      <div id="scroll"></div>
+      <p class="text" id="dropcontain">I live in
+        <select class="dropdowns" id="country" onchange="curchange()">
+          <option value="usa" class="options">The US</option>
+          <option value="uae" class="options">China</option>
+          <option value="india" class="options">India</option>
+        </select>
+        <br>
+        <span id="currency" class="red">Please give all costs in US dollars(USD)</span>
+      </p>
+      <div id="inputs" class="text">
+        <button id="autofillbutton" onclick="autofill()">Autofill Common Values</button>
+        <br>
+  
+        Full Self Driving (Autopilot is already included).
+        <span class="detail">
+          <br>
+          This option lets you earn money from other people as your car can become a taxi whenever you want. This option fights depreciation as a car becomes an investment. Tesla says they will have achieved full self driving later this year and the
+          price of this option will go up
+        </span>
+        <br>
+        <input type="checkbox" id="fullsd">
+        <br>
+        Mileage in km per liter <br>
+        <input type="number" id="mileage">
+        <br>
+        Cost of gas per liter <br>
+        <input type="number" id="gascost" step="0.1">
+        <br>
+        Initial cost of car <br>
+        <input type="number" id="carcost" step="10000">
+        <br>
+        Maintanence costs per year <br>
+        <input type="number" id="maintcost" step="1000">
+        <br>
+        Cost of electricity per kWH <br>
+        <input type="number" id="electcost" step="0.01">
+        <br>
+        Distance travelled per day on average in km <br>
+        <input type="number" id="distance" step="10">
+        <br>
+        Number of years you plan to use it for <br>
+        <input type="number" id="years">
+        <br>
+        <br>
+        Additional costs for the Tesla (Optional)
+        <br>
+        <span class="detail">For example, you can add the cost of painting the Tesla red. <a target="_blank" href="https://www.tesla.com/model3/design">Click to see the options online.</a></span>
+        <br>
+        <input type="number" id="extraelectcost" step="500">
+        <br>
+        Number of New York Taxi trips per month (Optional) <br>
+        <input type="number" id="taxi">
+        <br>
+      </div>
+  
+      <p id="result" class="text">Fill in the values and the result will be shown here</p>
+      <p class="text">
+        <a target="_blank" href="https://cleantechnica.com/2019/09/27/tesla-model-3-vs-toyota-camry-5-year-cost-to-own/">Clean Technica On Costs</a>
+        <br>
+        <br>
+        <a target="_blank" href="https://evannex.com/blogs/news/total-cost-of-ownership-tesla-model-3-vs-toyota-camry">Comparing a Toyota Camry to the Tesla Model 3</a>
+      </p>
+      <p class="text">
+        Made by someone who <a target="_blank" href="https://countdown.ted.com/"><span id="cares">Cares</span></a>
+      </p>
+  
+  
+    </main>
+    <section class="hero" id="hero2">
+      <div class="hidden" id="hero2inner">
+        <br>
+        <br>
+        Make the switch today!
+      </div>
+    </section>
+  </body>
+  
+</html>
